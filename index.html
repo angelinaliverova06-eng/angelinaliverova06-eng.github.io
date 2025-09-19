@@ -22,10 +22,10 @@
             <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
         </figure>
         <li>
-            <a href="https://www.kubsu.ru/ab">КубГУ</a>
+            <a href="/www.kubsu.ru/ab">КубГУ</a>
         </li>
         <li>
-            <a href="https://kubsu.ru">КубГУ</a>
+            <a href="/">КубГУ</a>
         </li>
         <li>
             <a id="s1"> Фрагмент текущей страниц </a>
@@ -74,7 +74,7 @@
             <img src="image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
         </li>
         <map name="map1">
-            <area shape="rectangle" coords="300, 130, 60" href="../result/circle-s.html" target="_blank"> Найдите прямоугольную область в центре
+            <area shape="rectangle" coords="300, 130, 60" href="../result/rectangle-s.html" target="_blank"> Найдите прямоугольную область в центре
         </map>
 
         <li>
@@ -96,7 +96,7 @@
         </li>
 
         <li>
-            <noindex>часть страницы</noindex>
+            <noindex> <a href="https://example.com/"></a> часть страницы</noindex>
         </li>
 
         <h2> Нумерованный список </h2>
@@ -110,6 +110,73 @@
             <a href="ftp://s0195823:pass456@ftp.myserver.com/1/reg.txt"> Скачать файл с формой регистрации</a>
         </li>
     </ul>
-</body>
+    <form action="#" method="post">
+    <fieldset>
+        <legend class="lead text-muted">Личная информация</legend>
 
+        <label for="fio">ФИО:*</label>
+        <input type="text" id="fio" name="fio" required style="border-style: dotted; border-color: red;"/>
+
+        <div></div>
+        <label for="phone">Телефон:*</label>
+        <input type="tel" id="phone" name="phone" required style="border-style: dotted; border-color: red;"/>
+
+        <div></div>
+        <label for="email">E-mail:*</label>
+        <input type="email" id="email" name="email" required style="border-style: dotted; border-color: red;"/>
+
+        <div></div>
+        <label for="birthdate">Дата рождения:*</label>
+        <input type="date" id="birthdate" name="birthdate" required style="border-style: dotted; border-color: red;"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Пол</legend>
+        <label>
+        <input type="radio" name="gender" value="male" required/>
+        Мужской
+        </label>
+        <label>
+        <input type="radio" name="gender" value="female" /> Женский
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Любимый язык программирования</legend>
+        <select name="languages" multiple size="6" style="border-style: dotted; border-color: red;">
+        <option value="pascal">Pascal</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="haskel">Haskel</option>
+        <option value="clojure">Clojure</option>
+        <option value="prolog">Prolog</option>
+        <option value="scala">Scala</option>
+        </select>
+        <p>
+        <small class="lead text-muted"
+            >Для множественного выбора используйте Ctrl+клик (Cmd+клик на
+            Mac)</small
+        >
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Биография</legend>
+        <textarea
+        placeholder="Расскажите о себе..."
+        ></textarea>
+    </fieldset>
+
+    <label>
+        <input type="checkbox" name="agreement" required/> С контрактом
+        ознакомлен(а)
+    </label>
+
+    <br /><br />
+    <button type="submit" class="lead text" style="border-color: red; border-style: dotted;">Сохранить</button>
+    </form>
+</body>
 </html>
