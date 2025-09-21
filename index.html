@@ -4,133 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
-    <title>Список ссылок и форма</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Вёрстка сайта</title>
 </head>
 
 <body>
-    <header>
-        <img src="C:/Users/Ангелина/Desktop/веб задания/2/2/photo.jpg" alt="Логотип" width="150" height="150">
-        <table>
-            <tr>
-                <th>
-                    <a> 1 </a>
-                </th>
-                <th>
-                    <a> 2 </a>
-                </th>
-                <th>
-                    <a> 3 </a>
-                </th>
-            </tr>
-        </table>
-        <h1>
-            <a> </a>
-        </h1>
-    </header>
+    <div>
+        <nav>
+            <img style="float:left; margin: 10px;" src="C:/Users/Ангелина/Desktop/веб задания/2/2/photo.jpg" alt="Логотип" width="150" height="150">
+            <table>
+                <tr>
+                    <th>
+                        <a href="#t1"> Ссылка меню 1 </a>
+                    </th>
+                    <th>
+                        <a href="#t2"> Ссылка 2 </a>
+                    </th>
+                    <th>
+                        <a href="#t3"> Ссылка 3 </a>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+        <header>
+            <h1>
+                <a> Сайт с гиперссылками, формой и таблицей </a>
+            </h1>
+        </header>
+    </div>
+   
+    <br>
+    <div>
+        <h2> <a id="t1"> Маркированный список гиперссылок</a> </h2>
+        <ul>
+            <li>
+                <a href="http://kubsu.ru/"> Oфициальный сайт КубГУ</a>
+            </li>
+            <li>
+                <a href="https://kubsu.ru/">Oфициальный сайт КубГУ (через протокол https)</a>
+            </li>
 
+            <figure>
+                <a href="image.jpg"> <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" alt="Картинка" style="width: 600px;"> </a>
+                <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
+            </figure>
+            <li>
+                <a href="/www.kubsu.ru/ab">КубГУ</a>
+            </li>
+            <li>
+                <a href="/">КубГУ</a>
+            </li>
+            <li>
+                <a id="s1"> Фрагмент текущей страницы </a>
+                <br>
+                <a href="#s1">Перейти к фрагменту</a>
+            </li>
+            <li>
+                <a href="https://www.kubsu.ru/ru/search/content">Поиск на сайте КубГУ</a>
+            </li>
+            <li>
+                <a href="https://www.kubsu.ru/ru/news/12345?id=67890">Смотреть новости</a>
+            </li>
 
-    <h2> Маркированный список гиперссылок</h2>
-    <ul>
-        <li>
-            <a href="http://kubsu.ru/"> Oфициальный сайт КубГУ</a>
-        </li>
-        <li>
-            <a href="https://kubsu.ru/">Oфициальный сайт КубГУ (через протокол https)</a>
-        </li>
+            <li>
+                <a href="https://www.kubsu.ru/#:~:text=%D1%81%2009%3A00%20%D0%B4%D0%BE%2013%3A00%2C%20%D1%81%2013%3A30%20%D0%B4%D0%BE%2018%3A00"> 
+                    Узнать часы работы приёмной комиссии КубГУ </a>
+            </li>
 
-        <figure>
-            <a href="image.jpg"> <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" alt="Картинка" style="width: 600px;"> </a>
-            <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
-        </figure>
-        <li>
-            <a href="/www.kubsu.ru/ab">КубГУ</a>
-        </li>
-        <li>
-            <a href="/">КубГУ</a>
-        </li>
-        <li>
-            <a id="s1"> Фрагмент текущей страниц </a>
+            <li>
+                <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+                <a href="about/contacts.html">Контакты</a>
+            </li>
+            <!-- 11-12 сделаны для страницы сайта КубГУ https://www.kubsu.ru/ru/university/departments -->
+            <li>
+                <a href="../"> Ссылка на уровень выше </a>
+            </li>
+
+            <li>
+                <a href="../../"> Ссылка на 2 уровня выше </a>
+            </li>
+
+            <li>
+                Для абитуриентов, желающих подать документы, на официальном сайте <a href="https://www.kubsu.ru/ru/abiturient">КубГУ создан специальный раздел</a>,
+        где можно найти всю необходимую информацию о сроках, правилах приема и необходимых экзаменах.
+            </li>
+            <li>
+                <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
+            </li>
+            <map name="map1">
+                <area shape="circle" coords="300, 130, 60" href="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" target="_blank"> Найдите круглую область в центре
+            </map>
             <br>
-            <a href="#s1">Перейти к фрагменту</a>
-        </li>
-        <li>
-            <a href="https://www.kubsu.ru/ru/search/content">Поиск на сайте КубГУ</a>
-        </li>
-        <li>
-            <a href="https://www.kubsu.ru/ru/news/12345?id=67890">Смотреть новости</a>
-        </li>
+            <li>
+                <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
+            </li>
+            <map name="map1">
+                <area shape="rectangle" coords="300, 130, 60" href="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" target="_blank"> Найдите прямоугольную область в центре
+            </map>
 
-        <li>
-            <a href="https://www.kubsu.ru/#:~:text=%D1%81%2009%3A00%20%D0%B4%D0%BE%2013%3A00%2C%20%D1%81%2013%3A30%20%D0%B4%D0%BE%2018%3A00"> 
-                Узнать часы работы приёмной комиссии КубГУ </a>
-        </li>
+            <li>
+                <a href="##"> Каталог1 (в разработке)</a>
+            </li>
 
-        <li>
-            <a href="catalog.html">Каталог</a>
-        </li>
-        <li>
-            <a href="about/contacts.html">Контакты</a>
-        </li>
-        <!-- 11-12 сделаны для страницы сайта КубГУ https://www.kubsu.ru/ru/university/departments -->
-        <li>
-            <a href="../"> Ссылка на уровень выше </a>
-        </li>
+            <li>
+                <a> Каталог2 (в разработке)</a>
+            </li>
 
-        <li>
-            <a href="../../"> Ссылка на 2 уровня выше </a>
-        </li>
+            <li>
+                <form action="http://kubsu.ru/" method="get" target="_blank">
+                    <button type="submit" class="link-button"> Посетить сайт КубГУ</button>
+                </form>
+            </li>
 
-        <li>
-            Для абитуриентов, желающих подать документы, на официальном сайте <a href="https://www.kubsu.ru/ru/abiturient">КубГУ создан специальный раздел</a>,
-    где можно найти всю необходимую информацию о сроках, правилах приема и необходимых экзаменах.
-        </li>
-        <li>
-            <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
-        </li>
-        <map name="map1">
-            <area shape="circle" coords="300, 130, 60" href="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" target="_blank"> Найдите круглую область в центре
-        </map>
-        <br>
-        <li>
-            <img src="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
-        </li>
-        <map name="map1">
-            <area shape="rectangle" coords="300, 130, 60" href="C:/Users/Ангелина/Desktop/веб задания/1/1/image.jpg" target="_blank"> Найдите прямоугольную область в центре
-        </map>
+            <li>
+                <a href="https://example.com/" rel="nofollow"> Запретная ссылка </a>
+            </li>
 
-        <li>
-            <a href="##"> Каталог1 (в разработке)</a>
-        </li>
+            <li>
+                <noindex> <a href="https://example.com/"></a> часть страницы</noindex>
+            </li>
 
-        <li>
-            <a> Каталог2 (в разработке)</a>
-        </li>
+            <li>Нумерованный список </li>
+            <ol>
+                <li> Title1 </li>
+                <li> Title2 </li>
+                <li> Title3 </li>
+            </ol>
 
-        <li>
-            <form action="http://kubsu.ru/" method="get" target="_blank">
-                <button type="submit" class="link-button"> Посетить сайт КубГУ</button>
-            </form>
-        </li>
+            <li>
+                <a href="ftp://s0195823:pass456@ftp.myserver.com/1/reg.txt"> Скачать файл с формой регистрации</a>
+            </li>
+        </ul>
+    </div>
 
-        <li>
-            <a href="https://example.com/" rel="nofollow"> Запретная ссылка </a>
-        </li>
+    <h2> <a id="t2"> Таблица </a> </h2>
+    <a> Чтобы узнать, какое расписание у ПМИ в понедельник, ознакомьтесь с представленной ниже таблицей: </a>
+    <table>
+        <tbody>
+            <tr>
+                <th> ПМ21/1 </th>
+                <th> ПМ21/2 </th>
+                <th> ПМ22/1 </th>
+                <th> ПМ22/2 </th>
+                <th> ПМ23 </th>
+            </tr>
+            <tr>
+                <th> Математический анализ </th>
+                <th> Объектно-ориентированное программирование </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <th> Разработка пользовательского ВЕБ-интерфейса </th>
+                <th> Математический анализ </th>
+                <th> Иностранный язык </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <td colspan="5"> Математический анализ </td>
+            </tr>
+            <tr>
+                <td colspan="5"> Разработка пользовательского ВЕБ-интерфейса </td>
+            </tr>
+            <tr>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th> Разработка пользовательского ВЕБ-интерфейса </th>
+                <th> Математический анализ </th>
+            </tr>
+        </tbody>
+    </table>
+    
 
-        <li>
-            <noindex> <a href="https://example.com/"></a> часть страницы</noindex>
-        </li>
-
-        <h2> Нумерованный список </h2>
-        <ol>
-            <li> Title1 </li>
-            <li> Title2 </li>
-            <li> Title3 </li>
-        </ol>
-
-        <li>
-            <a href="ftp://s0195823:pass456@ftp.myserver.com/1/reg.txt"> Скачать файл с формой регистрации</a>
-        </li>
-    </ul>
+    <h2> <a id="t3"> Форма </a> </h2>
     <form action="#" method="post">
     <fieldset>
         <legend class="lead text-muted">Личная информация</legend>
@@ -201,7 +252,7 @@
     </form>
 
     <footer>
-        <a> Автор страницы: Ангелина Ливерова, ПМ21/1</a>
+        <a> Автор страницы: Ангелина Ливерова, ПМ21/1 </a>
     </footer>
 </body>
 </html>
