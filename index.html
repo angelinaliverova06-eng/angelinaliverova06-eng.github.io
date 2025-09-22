@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <div>
+    <div id="first">
         <nav>
-            <table>
+            <img id="logo" src="C:/Users/Ангелина/Desktop/веб задания/2/2/photo.jpg" alt="Логотип" width="250" height="250">
+            <table class="firsttable">
                 <tr>
                     <th>
                         <a href="#t1"> Ссылка меню 1 </a>
@@ -26,7 +27,6 @@
             </table>
         </nav>
         <header>
-            <img src="C:/Users/Ангелина/Desktop/веб задания/2/2/photo.jpg" alt="Логотип" width="150" height="150">
             <h1>
                 <a> Сайт с гиперссылками, формой и таблицей </a>
             </h1>
@@ -44,10 +44,13 @@
                 <a href="https://kubsu.ru/">Oфициальный сайт КубГУ (через протокол https)</a>
             </li>
 
-            <figure>
-                <a href="C:/Users/Ангелина/Desktop/веб задания/2/2/image.jpg"> <img src="image.jpg" alt="Картинка" style="width: 600px;"> </a>
-                <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
-            </figure>
+            <li>
+                <figure>
+                    <a href="C:/Users/Ангелина/Desktop/веб задания/2/2/image.jpg"> <img src="image.jpg" alt="Картинка" style="width: 500px";> </a>
+                    <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
+                </figure>
+            </li>
+
             <li>
                 <a href="/www.kubsu.ru/ab">КубГУ</a>
             </li>
@@ -141,7 +144,7 @@
 
     <h2> <a id="t2"> Таблица </a> </h2>
     <a> Чтобы узнать, какое расписание у ПМИ в понедельник, ознакомьтесь с представленной ниже таблицей: </a>
-    <table id="special">
+    <table class="special">
         <tbody>
             <tr>
                 <th> ПМ21/1 </th>
@@ -164,11 +167,11 @@
                 <th>  </th>
                 <th>  </th>
             </tr>
-            <tr>
-                <td colspan="5"> Математический анализ </td>
+            <tr class="bld">
+                <th colspan="5"> Математический анализ </th>
             </tr>
-            <tr>
-                <td colspan="5"> Разработка пользовательского ВЕБ-интерфейса </td>
+            <tr class="bld">
+                <th colspan="5"> Разработка пользовательского ВЕБ-интерфейса </th>
             </tr>
             <tr>
                 <th>  </th>
@@ -247,10 +250,11 @@
         ознакомлен(а)
     </label>
 
-    <br /><br />
+    <br>
     <button type="submit" class="lead text">Сохранить</button>
     </form>
 
+    <br>
     <footer>
         <a> Автор страницы: Ангелина Ливерова, ПМ21/1 </a>
     </footer>
