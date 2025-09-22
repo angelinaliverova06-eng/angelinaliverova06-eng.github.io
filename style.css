@@ -1,3 +1,24 @@
-p {
-    color:red;
+nav{
+    color:rgb(66, 109, 228);
+    font-size:medium;
+    text-align: center;
+}
+h2{
+    font-size: medium;
+    color: rgb(66, 109, 228);
+}
+nav, header{
+    background-color: rgb(151, 174, 238);
+}
+nav, header, footer{
+    width: 100%;
+}
+div#center{
+    max-width: 960px;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+}
+table#special{
+
 }
