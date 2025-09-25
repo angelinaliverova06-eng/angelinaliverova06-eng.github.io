@@ -1,3 +1,9 @@
+* {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+}
+
 h1{
     text-align: left;
     font-size: 28px;
@@ -7,10 +13,14 @@ body{
     background-color: #eaf0f7;
     font-size:medium;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav{
     color:rgb(66, 109, 228);
+    order: 3;
 }
 
 h2{
@@ -20,6 +30,14 @@ h2{
 
 nav, header, footer{
     width: 100%;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    order: 1;
 }
 
 div#first{
@@ -45,6 +63,11 @@ img#logo{
     margin: 5px;
     width: 70px;
     height: 70px;
+}
+
+t2{
+    order: 2;
+    flex: 1;
 }
 
 .special{
@@ -74,4 +97,50 @@ img#logo{
 
 .bld{
     font-weight: bold;
+}
+
+
+footer{
+    order: 4;
+}
+
+
+@media (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "nav center"
+            "footer footer";
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    header{
+        grid-area: header;
+        order: 0;
+        justify-content: flex-start;
+    }
+    nav{
+        grid-area: nav;
+        order: 0;
+        flex-direction: column;
+    }
+    center{
+        grid-area: main;
+        order: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    special{
+        order: 1;
+    }
+    center{
+        order: 2;
+    }
+    form{
+        order: 3;
+    }
+    footer{
+        grid-area: footer;
+    }
 }
